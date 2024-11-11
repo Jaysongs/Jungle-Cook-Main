@@ -2,7 +2,7 @@
 
 #Here, we believe that cooking should be as joyful as it is flavorful. Whether you’re a seasoned chef or just starting your culinary journey, we’ve got something delicious for you. Our recipes are designed to inspire and guide you through each step, with easy-to-follow instructions and tips to bring out the best flavors in every dish.
 
-# Explore Our Categories:
+# Explore Our Categories: 
 
 #Browse: Perfect for busy weeknights, these dishes come together in 30 minutes or less.
 Create your own recipe: input a list of ingredients that you have, and we will give you a recipe to make based on those items
