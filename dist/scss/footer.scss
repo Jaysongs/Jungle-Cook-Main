@@ -1,0 +1,60 @@
+.footer {
+    height: 50px;
+    width: 100%;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    gap: .6rem;
+
+    .copy {
+      margin-left: -100px;
+      font-family: Lato;
+    }
+    .links-footer {
+      gap: .6rem;
+      min-width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      font-family: Lato;
+    }
+    #yourRecipesToggle {
+      display: none;
+    }
+
+    }
+    .logos-footer {
+        width: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer {
+      margin-bottom: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 80%;
+      gap: .6rem;
+  
+      .links-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 80%;
+        gap: .6rem;
+        }
+    }
+  }

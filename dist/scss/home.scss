@@ -1,0 +1,60 @@
+.app-home {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(45deg,#f25c54a1, #f25c54a1),  url(../assets/images/pizza.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .yellow-circle {
+        width: 360px;
+        height: 360px;
+        background-color: #FFD972;
+        border-radius: 50%;
+        box-shadow: 0px 7px 10px #2a2a2a66;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title-home {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Lato;
+        }
+        .text-home {
+            width: 45%;
+            text-align: center;
+            font-family: LatoL;
+            font-weight: bold;
+        }
+    }
+
+    .pink-circle {
+        width: 170px;
+        height: 170px;
+        background-color: #FCBCB8;
+        border-radius: 50%;
+        box-shadow: 0px 7px 10px #2a2a2a66;
+        margin-left: -5%;
+        margin-top: -15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .text-pink {
+            width: 60%;
+            text-align: center;
+            font-size: 10px;
+            font-family: LatoL;
+            font-weight: bold;
+        }
+    }
+}

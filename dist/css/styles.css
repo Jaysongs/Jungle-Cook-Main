@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.app-home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg, rgba(242, 92, 84, 0.631372549), rgba(242, 92, 84, 0.631372549)), url(../assets/images/pizza.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.app-home .circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app-home .yellow-circle {
+  width: 360px;
+  height: 360px;
+  background-color: #FFD972;
+  border-radius: 50%;
+  box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app-home .yellow-circle .title-home {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Lato;
+}
+.app-home .yellow-circle .text-home {
+  width: 45%;
+  text-align: center;
+  font-family: LatoL;
+  font-weight: bold;
+}
+.app-home .pink-circle {
+  width: 170px;
+  height: 170px;
+  background-color: #FCBCB8;
+  border-radius: 50%;
+  box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
+  margin-left: -5%;
+  margin-top: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-home .pink-circle .text-pink {
+  width: 60%;
+  text-align: center;
+  font-size: 10px;
+  font-family: LatoL;
+  font-weight: bold;
+}
+
+header {
+  padding: 50px;
+  position: absolute;
+  width: 100%;
+}
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1.6rem;
+}
+header .nav-container .logo {
+  z-index: 5;
+}
+header .nav-container .nav {
+  display: flex;
+  flex-grow: 1;
+}
+header .nav-container .nav .nav--ul__one {
+  margin: 0 auto;
+  display: flex;
+  gap: 1.6rem;
+  font-size: 25px;
+}
+header .nav-container .nav .nav--ul__two {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 25px;
+}
+header .nav-container .nav ul {
+  list-style: none;
+}
+header .nav-container .nav ul a {
+  text-decoration: none;
+  color: black;
+}
+header .nav-container .nav .loginBtn-nav {
+  border-radius: 20px;
+  padding: 5px 45px;
+  box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
+  background-color: #FFD972;
+  font-family: Lato;
+}
+header .nav-container .nav #so {
+  display: none;
+}
+header .nav-container .hamburger-menu {
+  z-index: -2;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 174px;
+    z-index: 5;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    padding-top: 6rem;
+    align-items: center;
+    text-align: center;
+    background-color: #F25C54;
+    transition: 0.3s ease-in-out;
+    height: 100vh;
+  }
+  .nav .nav--ul__one {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .nav .hamburger-menu {
+    display: block;
+    z-index: 2;
+  }
+  .nav.active {
+    right: 0;
+    z-index: 2;
+  }
+  .footer {
+    position: absolute;
+    margin-bottom: 0;
+  }
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  gap: 0.6rem;
+}
+.footer .copy {
+  margin-left: -100px;
+  font-family: Lato;
+}
+.footer .links-footer {
+  gap: 0.6rem;
+  min-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .links-footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: Lato;
+}
+.footer .links-footer #yourRecipesToggle {
+  display: none;
+}
+.footer .logos-footer {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  .footer {
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 0.6rem;
+  }
+  .footer .links-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    gap: 0.6rem;
+  }
+}
+#login-app {
+  width: 100%;
+  height: 100%;
+  background-color: #FFD972;
+}
+#login-app .login-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#login-app .login-content .login-here {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#login-app .login-content .login-here .title-login {
+  font-size: 30px;
+  font-family: Lato;
+}
+#login-app .login-content .login-here .form {
+  display: flex;
+  flex-direction: column;
+}
+#login-app .login-content .login-here .form input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+  border: none;
+  border-bottom: 3px black solid;
+  background-color: #FFD972;
+}
+#login-app .login-content .login-here .form input::placeholder {
+  color: black;
+  font-size: 12px;
+}
+#login-app .login-content .login-here .form a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+#login-app .login-content .login-here .form a .loginBtn-nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 50%;
+  padding: 5px 45px;
+  box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
+  background-color: #FFD972;
+  font-family: Lato;
+}
+#login-app .login-content .sign-up {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#login-app .login-content .sign-up .sign-up-title {
+  font-size: 30px;
+  font-family: Lato;
+}
+#login-app .login-content .sign-up .sign-up-title .default {
+  font-size: 10px;
+  font-style: italic;
+}
+#login-app .login-content .sign-up .form {
+  display: flex;
+  flex-direction: column;
+}
+#login-app .login-content .sign-up .form input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+  border: none;
+  border-bottom: 3px black solid;
+  background-color: #FFD972;
+}
+#login-app .login-content .sign-up .form input::placeholder {
+  color: black;
+  font-size: 12px;
+}
+#login-app .login-content .sign-up .form a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+#login-app .login-content .sign-up .form a .signupBtn-nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 70%;
+  padding: 5px 45px;
+  box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
+  background-color: #FFD972;
+  font-family: Lato;
+}
+
+@media only all and (max-width: 768px) {
+  #login-app {
+    width: 100%;
+    height: 150%;
+    background-color: #FFD972;
+  }
+  #login-app .login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
