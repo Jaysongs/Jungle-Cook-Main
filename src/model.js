@@ -17,6 +17,7 @@ onAuthStateChanged(auth, (user) => {
 
 
 export function signUserUp(firstName, lastName, email, password) {
+    console.log("model sign in")
     createUserWithEmailAndPassword(auth, email, password)
     .then(() => {
         console.log("User created");
@@ -31,14 +32,17 @@ export function signUserUp(firstName, lastName, email, password) {
 export function changePage(pageName) {
     console.log("pageName", pageName);
     if(pageName == "") {
-        $.get("dist/pages/home.html", (data) => {
+        $.get("pages/home.html", (data) => {
             $("#app").html(data);
         }).fail((error) => {
             console.log("error", error);
         });
     } else {
-        $.get(`dist/pages/${pageName}.html`, (data) => {
+        $.get(`pages/${pageName}.html`, (data) => {
             $("#app").html(data);
+            if (pageName == "login") {
+                addLoginListener();
+            }
         }).fail((error) => {
             console.log("error", error);
         });
@@ -65,5 +69,25 @@ export function signUserIn(email, password) {
     .catch((error) => {
         console.log(error);
     });
+}
 
+function addLoginListener() {
+    $("#submit").on("click", () => {
+        const firstName = $("#fName").val();
+        const lastName = $("#lName").val();
+        const email = $("#email").val();
+        const password = $("#password").val();
+
+        signUserUp(firstName, lastName, email, password);
+    });
+
+    $("#so").on("click", () => {
+        signUserOut();
+    });
+
+    $("#siSubmit").on("click", () => {
+        let siEmail = $("#siEmail").val();
+        let siPassword = $("#siPassword").val();
+        signUserIn(siEmail, siPassword);
+    });
 }
