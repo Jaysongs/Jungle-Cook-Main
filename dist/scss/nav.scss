@@ -23,9 +23,11 @@ header {
         .nav--ul__one {
           margin: 0 auto;
           display: flex;
+          align-items: center;
           gap: 1.6rem;
           font-size: 25px;
-  
+          margin-right: 0;
+          padding-right: 10px;
         }
   
         .nav--ul__two {
