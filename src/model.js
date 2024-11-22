@@ -33,11 +33,13 @@ export function signUserUp(firstName, lastName, email, password) {
 
 export function changePage(pageName) {
     console.log("pageName", pageName);
-    if(pageName == "") {
+
+    if (pageName == "") {
         $.get("pages/home.html", (data) => {
             $("#app").html(data);
-            $("#your-recipes").css("display", "block");
-            $("#so").css("display", "block");
+
+            $("#your-recipes").css("display", "none");
+            $("#so").css("display", "none");
         }).fail((error) => {
             console.log("error", error);
         });
@@ -52,6 +54,13 @@ export function changePage(pageName) {
         });
     }
 }
+
+$(document).ready(() => {
+    initializeApp();
+});
+
+
+
 
 export function signUserOut() {
     signOut(auth)
@@ -75,6 +84,11 @@ export function signUserIn(email, password) {
     });
 }
 
+function initializeApp() {
+    $("#your-recipes").css("display", "none");
+    $("#so").css("display", "none");
+}
+
 function addLoginListener() {
     $("#submit").on("click", () => {
         const firstName = $("#fName").val();
@@ -88,25 +102,23 @@ function addLoginListener() {
         $("#so").css("display", "block");
     });
 
-    $("#so").on("click", () => {
-        signUserOut();
-
-        $("#your-recipes").css("display", "none");
-        $("#so").css("display", "none");
-    });
-
     $("#siSubmit").on("click", () => {
         let siEmail = $("#siEmail").val();
         let siPassword = $("#siPassword").val();
 
         alert(`You are logged in with: ${siEmail}`);
-        $("#your-recipes").css("display", "block");
-        $("#so").css("display", "block");
 
         signUserIn(siEmail, siPassword);
 
+        $("#your-recipes").css("display", "block");
+        $("#so").css("display", "block");
+    });
 
+    $("#so").on("click", () => {
+        signUserOut();
 
+        $("#your-recipes").css("display", "none");
+        $("#so").css("display", "none");
     });
 }
 

@@ -1,0 +1,159 @@
+.bigOlBox {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+
+    .create-page-cont {
+        padding: 100px;
+        width: 90%;
+
+        p {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .input-main {
+            position: relative;
+        
+            .add-image-btn {
+                width: 80px;
+                height: 25px;
+                position: absolute;
+                left: 83%;
+                top: 15px;
+                border: none;
+
+                border-radius: 15px;
+                background-color: #EFA7A7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+
+
+            input {
+                margin: 25px 0px;
+                background-color: transparent;
+                color: black;
+                border: none;
+                border-bottom: black 2px solid;
+                width: 90%;
+                padding: 2px;
+            }
+    
+        }
+        input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color: black;
+            font-size: 18px;
+        }
+
+
+        .input-ingred {
+            margin-top: 50px;
+            position: relative;
+
+            p {
+                font-size: 16px;
+                font-weight: normal;
+            }
+
+            input {
+                margin: 25px 0px;
+                background-color: transparent;
+                color: black;
+                border: none;
+                border-bottom: black 2px solid;
+                width: 90%;
+                padding: 2px;
+            }
+
+            .add-image-btn {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                left: 87%;
+                bottom: 30px;
+                // border: none;
+
+                color: white;
+
+                border-radius: 50%;
+                background-color: #EFA7A7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+
+        .input-instruct {
+            margin-top: 50px;
+            position: relative;
+
+            p {
+                font-size: 16px;
+                font-weight: normal;
+            }
+
+            input {
+                margin: 25px 0px;
+                background-color: transparent;
+                color: black;
+                border: none;
+                border-bottom: black 2px solid;
+                width: 90%;
+                padding: 2px;
+            }
+
+            .add-image-btn {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                left: 87%;
+                bottom: 30px;
+                border: none;
+
+                color: white;
+
+                border-radius: 50%;
+                background-color: #EFA7A7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+    }
+
+    .create-button {
+        margin-bottom: 50px;
+
+
+        .add-image-btn {
+            width: 350px;
+            height: 40px;
+            margin-bottom: 50px;
+
+            border: none;
+
+
+            border-radius: 30px;
+            background-color: #EFA7A7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}

@@ -173,11 +173,10 @@ header .nav-container .hamburger-menu {
 .footer {
   height: 50px;
   width: 100%;
-  margin: -50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  position: relative;
+  position: absolute;
   bottom: 0;
   gap: 0.6rem;
 }
@@ -447,4 +446,128 @@ header .nav-container .hamburger-menu {
     margin-left: 20px;
     width: 220px;
   }
+}
+.bigOlBox {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.bigOlBox .create-page-cont {
+  padding: 100px;
+  width: 90%;
+}
+.bigOlBox .create-page-cont p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.bigOlBox .create-page-cont .input-main {
+  position: relative;
+}
+.bigOlBox .create-page-cont .input-main .add-image-btn {
+  width: 80px;
+  height: 25px;
+  position: absolute;
+  left: 83%;
+  top: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #EFA7A7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigOlBox .create-page-cont .input-main input {
+  margin: 25px 0px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: black 2px solid;
+  width: 90%;
+  padding: 2px;
+}
+.bigOlBox .create-page-cont input:focus {
+  outline: none;
+}
+.bigOlBox .create-page-cont ::placeholder {
+  color: black;
+  font-size: 18px;
+}
+.bigOlBox .create-page-cont .input-ingred {
+  margin-top: 50px;
+  position: relative;
+}
+.bigOlBox .create-page-cont .input-ingred p {
+  font-size: 16px;
+  font-weight: normal;
+}
+.bigOlBox .create-page-cont .input-ingred input {
+  margin: 25px 0px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: black 2px solid;
+  width: 90%;
+  padding: 2px;
+}
+.bigOlBox .create-page-cont .input-ingred .add-image-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 87%;
+  bottom: 30px;
+  color: white;
+  border-radius: 50%;
+  background-color: #EFA7A7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigOlBox .create-page-cont .input-instruct {
+  margin-top: 50px;
+  position: relative;
+}
+.bigOlBox .create-page-cont .input-instruct p {
+  font-size: 16px;
+  font-weight: normal;
+}
+.bigOlBox .create-page-cont .input-instruct input {
+  margin: 25px 0px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: black 2px solid;
+  width: 90%;
+  padding: 2px;
+}
+.bigOlBox .create-page-cont .input-instruct .add-image-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 87%;
+  bottom: 30px;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  background-color: #EFA7A7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigOlBox .create-button {
+  margin-bottom: 50px;
+}
+.bigOlBox .create-button .add-image-btn {
+  width: 350px;
+  height: 40px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: #EFA7A7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
