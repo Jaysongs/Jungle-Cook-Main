@@ -36,18 +36,4 @@ $(document).ready(function () {
      addListeners();
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+   

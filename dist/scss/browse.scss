@@ -39,7 +39,7 @@
           }
 
           .recipe {
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 255px;
@@ -97,18 +97,29 @@
 }
 
 @media (max-width: 768px) {
+
     .background {
         height: 300vh;
     
         .recipe-block {
             display: flex;
             flex-direction: column;
-
             .recipe {
-                width: 350px;
-                background-color: firebrick;
-
+                display: flex;
+                justify-content: center;
+                min-width: 350px;
+                
+                .details h2 {
+                    text-align: center;
+                    margin-left: 20px;
+                }
+                .details p {
+                    margin-left: 20px;
+                    width: 220px;
+                }
             }
+
+            
         }
     }
 }

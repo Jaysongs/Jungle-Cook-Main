@@ -104,6 +104,9 @@ header .nav-container .nav .nav--ul__one {
   margin-right: 0;
   padding-right: 10px;
 }
+header .nav-container .nav .nav--ul__one #your-recipes {
+  display: none;
+}
 header .nav-container .nav .nav--ul__two {
   display: flex;
   gap: 1.6rem;
@@ -146,8 +149,6 @@ header .nav-container .hamburger-menu {
     bottom: 0;
     width: 100%;
     padding-top: 6rem;
-    align-items: center;
-    text-align: center;
     background-color: #F25C54;
     transition: 0.3s ease-in-out;
     height: 100vh;
@@ -379,7 +380,7 @@ header .nav-container .hamburger-menu {
   border-radius: 10px;
 }
 .background .container .recipes .recipe {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 255px;
@@ -434,7 +435,16 @@ header .nav-container .hamburger-menu {
     flex-direction: column;
   }
   .background .recipe-block .recipe {
-    width: 350px;
-    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    min-width: 350px;
+  }
+  .background .recipe-block .recipe .details h2 {
+    text-align: center;
+    margin-left: 20px;
+  }
+  .background .recipe-block .recipe .details p {
+    margin-left: 20px;
+    width: 220px;
   }
 }

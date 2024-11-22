@@ -8,10 +8,10 @@ const auth = getAuth(app);
 onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("User is signed in");
-        $("#yourRecipesToggle").css("display", "block");
+        $("#your-recipes").css("display", "block");
     } else {
         console.log("User is signed out");
-        $("#yourRecipesToggle").css("display", "none");
+        $("#your-recipes").css("display", "none");
     }
 });
 
@@ -21,6 +21,8 @@ export function signUserUp(firstName, lastName, email, password) {
     createUserWithEmailAndPassword(auth, email, password)
     .then(() => {
         console.log("User created");
+
+        alert(`Welcome, ${firstName}! Your account has been created successfully.`);
     })
     .catch((error) => {
         console.log(error);
@@ -34,6 +36,8 @@ export function changePage(pageName) {
     if(pageName == "") {
         $.get("pages/home.html", (data) => {
             $("#app").html(data);
+            $("#your-recipes").css("display", "block");
+            $("#so").css("display", "block");
         }).fail((error) => {
             console.log("error", error);
         });
@@ -79,15 +83,30 @@ function addLoginListener() {
         const password = $("#password").val();
 
         signUserUp(firstName, lastName, email, password);
+
+        $("#your-recipes").css("display", "block");
+        $("#so").css("display", "block");
     });
 
     $("#so").on("click", () => {
         signUserOut();
+
+        $("#your-recipes").css("display", "none");
+        $("#so").css("display", "none");
     });
 
     $("#siSubmit").on("click", () => {
         let siEmail = $("#siEmail").val();
         let siPassword = $("#siPassword").val();
+
+        alert(`You are logged in with: ${siEmail}`);
+        $("#your-recipes").css("display", "block");
+        $("#so").css("display", "block");
+
         signUserIn(siEmail, siPassword);
+
+
+
     });
 }
+
