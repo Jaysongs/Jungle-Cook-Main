@@ -598,7 +598,11 @@ header .nav-container .hamburger-menu {
   gap: 50px;
   position: relative;
 }
-.background .container .recipes .view-btn {
+.background .container .recipes a {
+  text-decoration: none;
+  color: black;
+}
+.background .container .recipes a .view-btn {
   position: absolute;
   left: 125px;
   top: 100px;
@@ -682,4 +686,85 @@ header .nav-container .hamburger-menu {
 .background .container .recipes .recipe .details span img {
   width: 15px;
   margin-right: 10px;
+}
+
+.recipe-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+.recipe-container .content-container {
+  margin: 100px;
+  width: 100%;
+}
+.recipe-container .content-container .description {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+  width: 100%;
+  padding: 20px;
+}
+.recipe-container .content-container .description .desc-text {
+  margin-bottom: 10px;
+  width: 350px;
+}
+.recipe-container .content-container .description .desc-details p {
+  margin: 20px 0px;
+}
+.recipe-container .content-container .description .desc-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.recipe-container .content-container .description .image-container {
+  position: relative;
+}
+.recipe-container .content-container .description .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recipe-container .content-container .description .image-container .vertical-text {
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  top: 100px;
+  left: -20px;
+  font-size: 25px;
+}
+.recipe-container .content-container p, .recipe-container .content-container li {
+  margin: 5px 0;
+}
+.recipe-container .content-container ul, .recipe-container .content-container ol {
+  padding-top: 25px;
+}
+.recipe-container .content-container .description, .recipe-container .content-container .ingredients, .recipe-container .content-container .instructions {
+  margin-bottom: 20px;
+}
+.recipe-container .content-container .description .desc-title, .recipe-container .content-container .ingredients .desc-title, .recipe-container .content-container .instructions .desc-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.recipe-container .content-container .ingredients, .recipe-container .content-container .instructions {
+  padding-left: 100px;
+}
+.recipe-container .content-container .instructions {
+  padding-top: 25px;
+}
+
+.edit-button {
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+  align-self: flex-end;
+  outline: none;
+  transition: background-color 0.3s;
 }

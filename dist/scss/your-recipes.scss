@@ -28,18 +28,24 @@
         //   justify-content: center;
           position: relative;
 
-          .view-btn {
-            position: absolute;
-            left: 125px;
-            top: 100px;
-            width: 100px;
-            height: 35px;
+          a {
+            text-decoration: none;
+            color: black;
 
-            background-color: #FFD972;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            .view-btn {
+              position: absolute;
+              left: 125px;
+              top: 100px;
+              width: 100px;
+              height: 35px;
+  
+              background-color: #FFD972;
+              border-radius: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+  
           }
 
           .edit-btn {
