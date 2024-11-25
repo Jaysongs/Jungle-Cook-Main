@@ -11,7 +11,7 @@ Browse: Perfect for busy weeknights, these dishes come together in 30 minutes or
 Create your own recipe: input a list of ingredients that you have, and we will give you a recipe to make based on those items
 Search by category: From decadent desserts to comfort food classics, treat yourself to something sweet or savory.
 International Flavors: Travel the world without leaving your kitchen, with recipes inspired by global cuisines.
-Whether you're here for a one-pot meal or a multi-course feast, we’re here to help you master every flavor with confidence.
+Whether you're here for a one-pot meal or a multi-course feast, we help you master every flavor confidently.
 
 
 Happy Cooking!
