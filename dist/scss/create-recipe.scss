@@ -32,7 +32,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                cursor: pointer;
 
             }
 
@@ -82,7 +82,7 @@
                 position: absolute;
                 left: 87%;
                 bottom: 30px;
-                // border: none;
+                border: none;
 
                 color: white;
 
@@ -91,6 +91,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
 
             }
 
@@ -130,6 +131,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
 
             }
 
@@ -153,7 +155,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            cursor: pointer;
         }
     }
 }

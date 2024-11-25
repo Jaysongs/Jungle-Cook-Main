@@ -96,6 +96,8 @@ function addLoginListener() {
         const email = $("#email").val();
         const password = $("#password").val();
 
+
+
         signUserUp(firstName, lastName, email, password);
 
         $("#your-recipes").css("display", "block");
@@ -106,12 +108,13 @@ function addLoginListener() {
         let siEmail = $("#siEmail").val();
         let siPassword = $("#siPassword").val();
 
-        alert(`You are logged in with: ${siEmail}`);
+        alert(`You are signed in with: ${siEmail}`);
 
         signUserIn(siEmail, siPassword);
 
         $("#your-recipes").css("display", "block");
         $("#so").css("display", "block");
+
     });
 
     $("#so").on("click", () => {
@@ -122,3 +125,13 @@ function addLoginListener() {
     });
 }
 
+let recipes = JSON.parse(localStorage.getItem("recipes")) || []; // Load recipes from localStorage or initialize an empty array
+
+export function saveRecipe(recipe) {
+    recipes.push(recipe);
+    localStorage.setItem("recipes", JSON.stringify(recipes));
+}
+
+export function getRecipes() {
+    return JSON.parse(localStorage.getItem("recipes")) || [];
+}

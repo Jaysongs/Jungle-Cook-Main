@@ -479,6 +479,7 @@ header .nav-container .hamburger-menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .bigOlBox .create-page-cont .input-main input {
   margin: 25px 0px;
@@ -519,12 +520,14 @@ header .nav-container .hamburger-menu {
   position: absolute;
   left: 87%;
   bottom: 30px;
+  border: none;
   color: white;
   border-radius: 50%;
   background-color: #EFA7A7;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .bigOlBox .create-page-cont .input-instruct {
   margin-top: 50px;
@@ -556,6 +559,7 @@ header .nav-container .hamburger-menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .bigOlBox .create-button {
   margin-bottom: 50px;
@@ -570,6 +574,7 @@ header .nav-container .hamburger-menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .background {
