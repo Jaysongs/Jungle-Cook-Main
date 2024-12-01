@@ -49,16 +49,34 @@ export function changePage(pageName) {
             if (pageName == "login") {
                 addLoginListener();
             }
+
+            if (pageName == "create-recipe") {
+                $("#ingredBTN").on("click", function () {
+                    if ($(".input-ingred").length) {
+                        const numOfIngreds = $(".input-ingred input[type='text']").length;
+                        const newIngred = $(`<input type="text" placeholder="Ingredient #${numOfIngreds + 1}">`);
+                        $(".input-ingred").append(newIngred);
+                    } else {
+                        console.error("Ingredient container not found!");
+                    }
+                });
+            
+                $("#instBTN").on("click", function () {
+                    if ($(".input-instruct").length) {
+                        const numOfInstrs = $(".input-instruct input[type='text']").length;
+                        const newInstr = $(`<input type="text" placeholder="Instruction #${numOfInstrs + 1}">`);
+                        $(".input-instruct").append(newInstr);
+                    } else {
+                        console.error("Instruction container not found!");
+                    }
+                });
+        
+            }
         }).fail((error) => {
             console.log("error", error);
         });
     }
 }
-
-$(document).ready(() => {
-    initializeApp();
-});
-
 
 
 
@@ -125,7 +143,7 @@ function addLoginListener() {
     });
 }
 
-let recipes = JSON.parse(localStorage.getItem("recipes")) || []; // Load recipes from localStorage or initialize an empty array
+let recipes = JSON.parse(localStorage.getItem("recipes")) || []; 
 
 export function saveRecipe(recipe) {
     recipes.push(recipe);
@@ -135,3 +153,7 @@ export function saveRecipe(recipe) {
 export function getRecipes() {
     return JSON.parse(localStorage.getItem("recipes")) || [];
 }
+
+$(document).ready(() => {
+    initializeApp();
+});
