@@ -19,23 +19,23 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @font-face {
   font-family: GillSansLight;
-  src: url(dist/assets/fonts/GillSans-Light.ttf);
+  src: url(../assets/fonts/GillSans-Light.ttf);
 }
 @font-face {
   font-family: LatoLightReg;
-  src: url(dist/assets/fonts/Lato-Light.ttf);
+  src: url(../assets/fonts/Lato-Light.ttf);
 }
 @font-face {
   font-family: LatoBlackReg;
-  src: url(dist/assets/fonts/Lato-Black.ttf);
+  src: url(../assets/fonts/Lato-Black.ttf);
 }
 @font-face {
   font-family: CavetBold;
-  src: url(dist/assets/fonts/Caveat-Bold.ttf);
+  src: url(../assets/fonts/Caveat-Bold.ttf);
 }
 @font-face {
   font-family: CavetReg;
-  src: url(dist/assets/fonts/Caveat-Regular.ttf);
+  src: url(../assets/fonts/Caveat-Regular.ttf);
 }
 
 .app-home {
