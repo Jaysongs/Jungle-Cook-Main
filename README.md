@@ -30,4 +30,4 @@ There sadly is no CRUD so users cannot save/edit a recipe
 
 
 
-Link to updated project: https://in-info-web4.luddy.indianapolis.iu.edu/~jlwyly/Jungle%20Cook%20Main/dist/
+Link to updated project: https://in-info-web4.luddy.indianapolis.iu.edu/~jlwyly/Jungle%20Cook%20Main/dist/](https://in-info-web4.luddy.indianapolis.iu.edu/~jlwyly/Jungle%20Cook%20Main%20(Sunday,%20December%201,%202024%209-20-23%20PM)/dist/
