@@ -17,6 +17,26 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   width: 100%;
 }
+@font-face {
+  font-family: GillSansLight;
+  src: url(dist/assets/fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: LatoLightReg;
+  src: url(dist/assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: LatoBlackReg;
+  src: url(dist/assets/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: CavetBold;
+  src: url(dist/assets/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: CavetReg;
+  src: url(dist/assets/fonts/Caveat-Regular.ttf);
+}
 
 .app-home {
   width: 100%;
@@ -47,7 +67,7 @@ h1, h2, h3, h4, h5, h6, p {
 .app-home .yellow-circle .title-home {
   font-size: 24px;
   font-weight: bold;
-  font-family: Lato;
+  font-family: CavetBold;
 }
 .app-home .yellow-circle .text-home {
   width: 45%;
@@ -96,6 +116,7 @@ header .nav-container .nav {
   flex-grow: 1;
 }
 header .nav-container .nav .nav--ul__one {
+  font-family: CavetReg;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -113,9 +134,11 @@ header .nav-container .nav .nav--ul__two {
   font-size: 25px;
 }
 header .nav-container .nav ul {
+  font-family: CavetReg;
   list-style: none;
 }
 header .nav-container .nav ul a {
+  font-family: CavetReg;
   text-decoration: none;
   color: black;
 }
@@ -124,7 +147,7 @@ header .nav-container .nav .loginBtn-nav {
   padding: 5px 45px;
   box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
   background-color: #FFD972;
-  font-family: Lato;
+  font-family: CavetReg;
 }
 header .nav-container .nav #so {
   display: none;
@@ -248,7 +271,7 @@ header .nav-container .hamburger-menu {
 }
 #login-app .login-content .login-here .title-login {
   font-size: 30px;
-  font-family: Lato;
+  font-family: LatoBlackReg;
 }
 #login-app .login-content .login-here .form {
   display: flex;
@@ -281,7 +304,7 @@ header .nav-container .hamburger-menu {
   padding: 5px 45px;
   box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
   background-color: #FFD972;
-  font-family: Lato;
+  font-family: CavetReg;
 }
 #login-app .login-content .sign-up {
   width: 25%;
@@ -292,7 +315,7 @@ header .nav-container .hamburger-menu {
 }
 #login-app .login-content .sign-up .sign-up-title {
   font-size: 30px;
-  font-family: Lato;
+  font-family: LatoBlackReg;
 }
 #login-app .login-content .sign-up .sign-up-title .default {
   font-size: 10px;
@@ -330,7 +353,7 @@ header .nav-container .hamburger-menu {
   padding: 5px 45px;
   box-shadow: 0px 7px 10px rgba(42, 42, 42, 0.4);
   background-color: #FFD972;
-  font-family: Lato;
+  font-family: CavetReg;
 }
 
 @media only all and (max-width: 1024px) {
@@ -374,6 +397,7 @@ header .nav-container .hamburger-menu {
   max-height: 90%;
 }
 .background .container h1 {
+  font-family: CavetBold;
   margin-bottom: 20px;
   margin-top: 50px;
   padding-left: 125px;
@@ -407,6 +431,7 @@ header .nav-container .hamburger-menu {
   margin-bottom: 10px;
 }
 .background .container .recipes .recipe h2 {
+  font-family: LatoBlackReg;
   margin: 10px 0;
   border-bottom: black 2px solid;
   display: block;
@@ -475,6 +500,7 @@ header .nav-container .hamburger-menu {
   width: 90%;
 }
 .bigOlBox .create-page-cont p {
+  font-family: CavetBold;
   font-size: 25px;
   font-weight: bold;
 }
@@ -494,8 +520,10 @@ header .nav-container .hamburger-menu {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: CavetReg;
 }
 .bigOlBox .create-page-cont .input-main input {
+  font-family: LatoLightReg;
   margin: 25px 0px;
   background-color: transparent;
   color: black;
@@ -516,10 +544,12 @@ header .nav-container .hamburger-menu {
   position: relative;
 }
 .bigOlBox .create-page-cont .input-ingred p {
+  font-family: LatoBlackReg;
   font-size: 16px;
   font-weight: normal;
 }
 .bigOlBox .create-page-cont .input-ingred input {
+  font-family: LatoLightReg;
   margin: 25px 0px;
   background-color: transparent;
   color: black;
@@ -529,6 +559,7 @@ header .nav-container .hamburger-menu {
   padding: 2px;
 }
 .bigOlBox .create-page-cont .input-ingred .add-image-btn {
+  font-family: GillSansLight;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -548,10 +579,12 @@ header .nav-container .hamburger-menu {
   position: relative;
 }
 .bigOlBox .create-page-cont .input-instruct p {
+  font-family: LatoBlackReg;
   font-size: 16px;
   font-weight: normal;
 }
 .bigOlBox .create-page-cont .input-instruct input {
+  font-family: LatoLightReg;
   margin: 25px 0px;
   background-color: transparent;
   color: black;
@@ -561,6 +594,7 @@ header .nav-container .hamburger-menu {
   padding: 2px;
 }
 .bigOlBox .create-page-cont .input-instruct .add-image-btn {
+  font-family: GillSansLight;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -587,6 +621,7 @@ header .nav-container .hamburger-menu {
   height: 40px;
   margin-bottom: 50px;
   border: none;
+  font-family: CavetReg;
   border-radius: 30px;
   background-color: #EFA7A7;
   display: flex;
@@ -611,6 +646,7 @@ header .nav-container .hamburger-menu {
   max-height: 90%;
 }
 .background-yr .container h1 {
+  font-family: CavetBold;
   margin-bottom: 20px;
   margin-top: 50px;
   padding-left: 125px;
@@ -626,6 +662,7 @@ header .nav-container .hamburger-menu {
   color: black;
 }
 .background-yr .container .recipes a .view-btn {
+  font-family: CavetReg;
   position: absolute;
   left: 125px;
   top: 100px;
@@ -638,6 +675,7 @@ header .nav-container .hamburger-menu {
   align-items: center;
 }
 .background-yr .container .recipes .edit-btn {
+  font-family: CavetReg;
   position: absolute;
   left: 70px;
   bottom: -40px;
@@ -650,6 +688,7 @@ header .nav-container .hamburger-menu {
   align-items: center;
 }
 .background-yr .container .recipes .del-btn {
+  font-family: CavetReg;
   position: absolute;
   left: 200px;
   bottom: -40px;
@@ -694,6 +733,7 @@ header .nav-container .hamburger-menu {
   line-height: 1.5;
 }
 .background-yr .container .recipes .recipe .details {
+  font-family: LatoBlackReg;
   margin-top: 10px;
   font-size: 0.8em;
   display: flex;
@@ -731,11 +771,16 @@ header .nav-container .hamburger-menu {
   padding: 20px;
 }
 .recipe-container .content-container .description .desc-text {
+  font-family: CavetReg;
   margin-bottom: 10px;
   width: 350px;
 }
 .recipe-container .content-container .description .desc-details p {
+  font-family: CavetReg;
   margin: 20px 0px;
+}
+.recipe-container .content-container .description .desc-details .fonty {
+  font-family: LatoBlackReg;
 }
 .recipe-container .content-container .description .desc-info {
   height: 100%;
@@ -752,14 +797,17 @@ header .nav-container .hamburger-menu {
   object-fit: cover;
 }
 .recipe-container .content-container .description .image-container .vertical-text {
+  font-family: LatoBlackReg;
   position: absolute;
+  transform: rotate(-180deg);
   writing-mode: vertical-rl;
   text-orientation: mixed;
   top: 100px;
-  left: -20px;
+  left: -35px;
   font-size: 25px;
 }
 .recipe-container .content-container p, .recipe-container .content-container li {
+  font-family: CavetReg;
   margin: 5px 0;
 }
 .recipe-container .content-container ul, .recipe-container .content-container ol {
@@ -769,6 +817,7 @@ header .nav-container .hamburger-menu {
   margin-bottom: 20px;
 }
 .recipe-container .content-container .description .desc-title, .recipe-container .content-container .ingredients .desc-title, .recipe-container .content-container .instructions .desc-title {
+  font-family: LatoBlackReg;
   font-size: 25px;
   margin-bottom: 10px;
 }

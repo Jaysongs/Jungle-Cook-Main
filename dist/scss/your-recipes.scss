@@ -16,6 +16,7 @@
         max-height: 90%;
     
         h1 {
+          font-family: CavetBold;
           margin-bottom: 20px;
           margin-top: 50px;
           padding-left: 125px;
@@ -33,6 +34,7 @@
             color: black;
 
             .view-btn {
+              font-family: CavetReg;
               position: absolute;
               left: 125px;
               top: 100px;
@@ -49,6 +51,7 @@
           }
 
           .edit-btn {
+            font-family: CavetReg;
             position: absolute;
             left: 70px;
             bottom: -40px;
@@ -63,6 +66,7 @@
           }
 
           .del-btn {
+            font-family: CavetReg;
             position: absolute;
             left: 200px;
             bottom: -40px;
@@ -115,6 +119,7 @@
             }
     
             .details {
+              font-family: LatoBlackReg;
               margin-top: 10px;
               font-size: 0.8em;
               display: flex;

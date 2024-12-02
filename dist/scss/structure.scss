@@ -16,6 +16,27 @@
    #app {
     height: 100%;
     width: 100%;
-  
+
+    @font-face {
+      font-family: GillSansLight;
+      src: url(dist/assets/fonts/GillSans-Light.ttf);
+    }
+    @font-face {
+      font-family: LatoLightReg;
+      src: url(dist/assets/fonts/Lato-Light.ttf);
+    }
+    @font-face {
+      font-family: LatoBlackReg;
+      src: url(dist/assets/fonts/Lato-Black.ttf);
+    }
+    @font-face {
+      font-family: CavetBold;
+      src: url(dist/assets/fonts/Caveat-Bold.ttf);
+    }
+    @font-face {
+      font-family: CavetReg;
+      src: url(dist/assets/fonts/Caveat-Regular.ttf);
+    }
+
   }
   

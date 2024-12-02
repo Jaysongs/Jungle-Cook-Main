@@ -22,12 +22,17 @@
             padding: 20px;
 
             .desc-text {
+              font-family: CavetReg;
                 margin-bottom: 10px;
                 width: 350px;
             }
             .desc-details {
                 p {
+                  font-family: CavetReg;
                     margin: 20px 0px;
+                }
+                .fonty {
+                  font-family: LatoBlackReg;
                 }
             }
 
@@ -51,11 +56,13 @@
                 }
             
                 .vertical-text {
+                  font-family: LatoBlackReg;
                   position: absolute;
+                  transform: rotate(-180deg);
                   writing-mode: vertical-rl;
                   text-orientation: mixed;
                   top: 100px;
-                  left: -20px;
+                  left: -35px;
                   font-size: 25px;
                 }
             }
@@ -64,6 +71,7 @@
 
   
       p, li {
+        font-family: CavetReg;
         margin: 5px 0;
       }
   
@@ -75,6 +83,7 @@
         margin-bottom: 20px;
 
         .desc-title {
+          font-family: LatoBlackReg;
             font-size: 25px;
             margin-bottom: 10px;
         }

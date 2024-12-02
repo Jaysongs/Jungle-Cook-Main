@@ -12,6 +12,7 @@
         width: 90%;
 
         p {
+            font-family: CavetBold;
             font-size: 25px;
             font-weight: bold;
         }
@@ -34,10 +35,13 @@
                 align-items: center;
                 cursor: pointer;
 
+                font-family: CavetReg;
+
             }
 
 
             input {
+                font-family: LatoLightReg;
                 margin: 25px 0px;
                 background-color: transparent;
                 color: black;
@@ -62,11 +66,13 @@
             position: relative;
 
             p {
+                font-family: LatoBlackReg;
                 font-size: 16px;
                 font-weight: normal;
             }
 
             input {
+                font-family: LatoLightReg;
                 margin: 25px 0px;
                 background-color: transparent;
                 color: black;
@@ -77,6 +83,7 @@
             }
 
             .add-image-btn {
+                font-family: GillSansLight;
                 width: 30px;
                 height: 30px;
                 position: absolute;
@@ -102,11 +109,13 @@
             position: relative;
 
             p {
+                font-family: LatoBlackReg;
                 font-size: 16px;
                 font-weight: normal;
             }
 
             input {
+                font-family: LatoLightReg;
                 margin: 25px 0px;
                 background-color: transparent;
                 color: black;
@@ -117,6 +126,7 @@
             }
 
             .add-image-btn {
+                font-family: GillSansLight;
                 width: 30px;
                 height: 30px;
                 position: absolute;
@@ -140,7 +150,7 @@
     a {
         text-decoration: none;
         color: black;
-        
+
         .create-button {
             margin-bottom: 50px;
     
@@ -151,7 +161,7 @@
                 margin-bottom: 50px;
     
                 border: none;
-    
+                font-family: CavetReg;
     
                 border-radius: 30px;
                 background-color: #EFA7A7;
