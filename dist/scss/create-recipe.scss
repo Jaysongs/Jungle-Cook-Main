@@ -137,25 +137,31 @@
 
         }
     }
-
-    .create-button {
-        margin-bottom: 50px;
-
-
-        .add-image-btn {
-            width: 350px;
-            height: 40px;
+    a {
+        text-decoration: none;
+        color: black;
+        
+        .create-button {
             margin-bottom: 50px;
-
-            border: none;
-
-
-            border-radius: 30px;
-            background-color: #EFA7A7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
+    
+    
+            .add-image-btn {
+                width: 350px;
+                height: 40px;
+                margin-bottom: 50px;
+    
+                border: none;
+    
+    
+                border-radius: 30px;
+                background-color: #EFA7A7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
         }
     }
+
+    
 }

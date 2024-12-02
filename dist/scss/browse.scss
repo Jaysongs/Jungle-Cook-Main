@@ -90,16 +90,16 @@
       }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
     .background {
-        height: 220vh;
+        min-height: 200vh;
     }
 }
 
 @media (max-width: 768px) {
 
     .background {
-        height: 300vh;
+        min-height: 300vh;
     
         .recipe-block {
             display: flex;
